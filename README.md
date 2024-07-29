@@ -4,3 +4,8 @@
 
 
 /b This is a simple tool that, when you drag files into it, will search the system for all files with the same name.
+
+
+## TODOs
+
+* Supports fuzzy file search/支持文件模糊查询
