@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE283C032C576469009A8998 /* FFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C022C576469009A8998 /* FFinderApp.swift */; };
+		AE283C052C576469009A8998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C042C576469009A8998 /* ContentView.swift */; };
+		AE283C072C576469009A8998 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C062C576469009A8998 /* Item.swift */; };
+		AE283C092C57646B009A8998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE283C082C57646B009A8998 /* Assets.xcassets */; };
+		AE283C0C2C57646B009A8998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE283C0B2C57646B009A8998 /* Preview Assets.xcassets */; };
+		AE283C172C57646B009A8998 /* FFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C162C57646B009A8998 /* FFinderTests.swift */; };
+		AE283C212C57646B009A8998 /* FFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C202C57646B009A8998 /* FFinderUITests.swift */; };
+		AE283C232C57646B009A8998 /* FFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C222C57646B009A8998 /* FFinderUITestsLaunchTests.swift */; };
+		AE283C302C5764C1009A8998 /* FileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C2F2C5764C1009A8998 /* FileDetail.swift */; };
+		AE283C322C5764EA009A8998 /* DragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C312C5764EA009A8998 /* DragDropView.swift */; };
+		AE283C342C576507009A8998 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C332C576507009A8998 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE283C132C57646B009A8998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE283BF72C576469009A8998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE283BFE2C576469009A8998;
+			remoteInfo = FFinder;
+		};
+		AE283C1D2C57646B009A8998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE283BF72C576469009A8998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE283BFE2C576469009A8998;
+			remoteInfo = FFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE283BFF2C576469009A8998 /* FFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE283C022C576469009A8998 /* FFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFinderApp.swift; sourceTree = "<group>"; };
+		AE283C042C576469009A8998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE283C062C576469009A8998 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AE283C082C57646B009A8998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE283C0B2C57646B009A8998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE283C0D2C57646B009A8998 /* FFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FFinder.entitlements; sourceTree = "<group>"; };
+		AE283C122C57646B009A8998 /* FFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE283C162C57646B009A8998 /* FFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFinderTests.swift; sourceTree = "<group>"; };
+		AE283C1C2C57646B009A8998 /* FFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE283C202C57646B009A8998 /* FFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFinderUITests.swift; sourceTree = "<group>"; };
+		AE283C222C57646B009A8998 /* FFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE283C2F2C5764C1009A8998 /* FileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetail.swift; sourceTree = "<group>"; };
+		AE283C312C5764EA009A8998 /* DragDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropView.swift; sourceTree = "<group>"; };
+		AE283C332C576507009A8998 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE283BFC2C576469009A8998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C0F2C57646B009A8998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C192C57646B009A8998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE283BF62C576469009A8998 = {
+			isa = PBXGroup;
+			children = (
+				AE283C012C576469009A8998 /* FFinder */,
+				AE283C152C57646B009A8998 /* FFinderTests */,
+				AE283C1F2C57646B009A8998 /* FFinderUITests */,
+				AE283C002C576469009A8998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE283C002C576469009A8998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE283BFF2C576469009A8998 /* FFinder.app */,
+				AE283C122C57646B009A8998 /* FFinderTests.xctest */,
+				AE283C1C2C57646B009A8998 /* FFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE283C012C576469009A8998 /* FFinder */ = {
+			isa = PBXGroup;
+			children = (
+				AE283C022C576469009A8998 /* FFinderApp.swift */,
+				AE283C042C576469009A8998 /* ContentView.swift */,
+				AE283C062C576469009A8998 /* Item.swift */,
+				AE283C082C57646B009A8998 /* Assets.xcassets */,
+				AE283C0D2C57646B009A8998 /* FFinder.entitlements */,
+				AE283C0A2C57646B009A8998 /* Preview Content */,
+				AE283C2F2C5764C1009A8998 /* FileDetail.swift */,
+				AE283C312C5764EA009A8998 /* DragDropView.swift */,
+				AE283C332C576507009A8998 /* Utils.swift */,
+			);
+			path = FFinder;
+			sourceTree = "<group>";
+		};
+		AE283C0A2C57646B009A8998 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE283C0B2C57646B009A8998 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE283C152C57646B009A8998 /* FFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE283C162C57646B009A8998 /* FFinderTests.swift */,
+			);
+			path = FFinderTests;
+			sourceTree = "<group>";
+		};
+		AE283C1F2C57646B009A8998 /* FFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE283C202C57646B009A8998 /* FFinderUITests.swift */,
+				AE283C222C57646B009A8998 /* FFinderUITestsLaunchTests.swift */,
+			);
+			path = FFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE283BFE2C576469009A8998 /* FFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE283C262C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinder" */;
+			buildPhases = (
+				AE283BFB2C576469009A8998 /* Sources */,
+				AE283BFC2C576469009A8998 /* Frameworks */,
+				AE283BFD2C576469009A8998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFinder;
+			productName = FFinder;
+			productReference = AE283BFF2C576469009A8998 /* FFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE283C112C57646B009A8998 /* FFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE283C292C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinderTests" */;
+			buildPhases = (
+				AE283C0E2C57646B009A8998 /* Sources */,
+				AE283C0F2C57646B009A8998 /* Frameworks */,
+				AE283C102C57646B009A8998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE283C142C57646B009A8998 /* PBXTargetDependency */,
+			);
+			name = FFinderTests;
+			productName = FFinderTests;
+			productReference = AE283C122C57646B009A8998 /* FFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE283C1B2C57646B009A8998 /* FFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE283C2C2C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinderUITests" */;
+			buildPhases = (
+				AE283C182C57646B009A8998 /* Sources */,
+				AE283C192C57646B009A8998 /* Frameworks */,
+				AE283C1A2C57646B009A8998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE283C1E2C57646B009A8998 /* PBXTargetDependency */,
+			);
+			name = FFinderUITests;
+			productName = FFinderUITests;
+			productReference = AE283C1C2C57646B009A8998 /* FFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE283BF72C576469009A8998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AE283BFE2C576469009A8998 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AE283C112C57646B009A8998 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AE283BFE2C576469009A8998;
+					};
+					AE283C1B2C57646B009A8998 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AE283BFE2C576469009A8998;
+					};
+				};
+			};
+			buildConfigurationList = AE283BFA2C576469009A8998 /* Build configuration list for PBXProject "FFinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE283BF62C576469009A8998;
+			productRefGroup = AE283C002C576469009A8998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE283BFE2C576469009A8998 /* FFinder */,
+				AE283C112C57646B009A8998 /* FFinderTests */,
+				AE283C1B2C57646B009A8998 /* FFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE283BFD2C576469009A8998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE283C0C2C57646B009A8998 /* Preview Assets.xcassets in Resources */,
+				AE283C092C57646B009A8998 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C102C57646B009A8998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C1A2C57646B009A8998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE283BFB2C576469009A8998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE283C322C5764EA009A8998 /* DragDropView.swift in Sources */,
+				AE283C052C576469009A8998 /* ContentView.swift in Sources */,
+				AE283C072C576469009A8998 /* Item.swift in Sources */,
+				AE283C302C5764C1009A8998 /* FileDetail.swift in Sources */,
+				AE283C032C576469009A8998 /* FFinderApp.swift in Sources */,
+				AE283C342C576507009A8998 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C0E2C57646B009A8998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE283C172C57646B009A8998 /* FFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE283C182C57646B009A8998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE283C212C57646B009A8998 /* FFinderUITests.swift in Sources */,
+				AE283C232C57646B009A8998 /* FFinderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE283C142C57646B009A8998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE283BFE2C576469009A8998 /* FFinder */;
+			targetProxy = AE283C132C57646B009A8998 /* PBXContainerItemProxy */;
+		};
+		AE283C1E2C57646B009A8998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE283BFE2C576469009A8998 /* FFinder */;
+			targetProxy = AE283C1D2C57646B009A8998 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE283C242C57646B009A8998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE283C252C57646B009A8998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AE283C272C57646B009A8998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FFinder/FFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FFinder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE283C282C57646B009A8998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FFinder/FFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FFinder/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE283C2A2C57646B009A8998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FFinder";
+			};
+			name = Debug;
+		};
+		AE283C2B2C57646B009A8998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FFinder";
+			};
+			name = Release;
+		};
+		AE283C2D2C57646B009A8998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FFinder;
+			};
+			name = Debug;
+		};
+		AE283C2E2C57646B009A8998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tradeware.FFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE283BFA2C576469009A8998 /* Build configuration list for PBXProject "FFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE283C242C57646B009A8998 /* Debug */,
+				AE283C252C57646B009A8998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE283C262C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE283C272C57646B009A8998 /* Debug */,
+				AE283C282C57646B009A8998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE283C292C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE283C2A2C57646B009A8998 /* Debug */,
+				AE283C2B2C57646B009A8998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE283C2C2C57646B009A8998 /* Build configuration list for PBXNativeTarget "FFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE283C2D2C57646B009A8998 /* Debug */,
+				AE283C2E2C57646B009A8998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE283BF72C576469009A8998 /* Project object */;
+}
