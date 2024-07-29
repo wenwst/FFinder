@@ -18,6 +18,8 @@
 		AE283C302C5764C1009A8998 /* FileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C2F2C5764C1009A8998 /* FileDetail.swift */; };
 		AE283C322C5764EA009A8998 /* DragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C312C5764EA009A8998 /* DragDropView.swift */; };
 		AE283C342C576507009A8998 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE283C332C576507009A8998 /* Utils.swift */; };
+		AE283C392C57A993009A8998 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AE283C372C57A993009A8998 /* LICENSE */; };
+		AE283C3A2C57A993009A8998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE283C382C57A993009A8998 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AE283C2F2C5764C1009A8998 /* FileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetail.swift; sourceTree = "<group>"; };
 		AE283C312C5764EA009A8998 /* DragDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropView.swift; sourceTree = "<group>"; };
 		AE283C332C576507009A8998 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AE283C372C57A993009A8998 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AE283C382C57A993009A8998 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		AE283BF62C576469009A8998 = {
 			isa = PBXGroup;
 			children = (
+				AE283C372C57A993009A8998 /* LICENSE */,
+				AE283C382C57A993009A8998 /* README.md */,
 				AE283C012C576469009A8998 /* FFinder */,
 				AE283C152C57646B009A8998 /* FFinderTests */,
 				AE283C1F2C57646B009A8998 /* FFinderUITests */,
@@ -245,7 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE283C392C57A993009A8998 /* LICENSE in Resources */,
 				AE283C0C2C57646B009A8998 /* Preview Assets.xcassets in Resources */,
+				AE283C3A2C57A993009A8998 /* README.md in Resources */,
 				AE283C092C57646B009A8998 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
