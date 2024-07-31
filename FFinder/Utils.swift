@@ -1,4 +1,5 @@
 import Foundation
+import AppKit
 import CommonCrypto
 
 struct Utils {
@@ -29,4 +30,14 @@ struct Utils {
          return hash.map { String(format: "%02x", $0) }.joined()
      }
     
+    
+    static func getFileIcon(for path: String) -> NSImage {
+        let fileURL = URL(fileURLWithPath: path)
+        return NSWorkspace.shared.icon(forFile: fileURL.path)
+    }
+    
+    static func openInFinder(filePath: String) {
+        let fileURL = URL(fileURLWithPath: filePath)
+        NSWorkspace.shared.activateFileViewerSelecting([fileURL])
+    }
 }
