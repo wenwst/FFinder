@@ -9,6 +9,7 @@ struct ContentView: View {
     @State private var currentPage: Int = 0
     @State private var itemsPerPage: Int = 10
     @State private var searchDuration: String = "" // State for search duration
+    
 
     private var totalPages: Int {
         (searchResults.count + itemsPerPage - 1) / itemsPerPage
@@ -17,9 +18,16 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
+                Image("DragFileIcon")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .padding(.top, 50)
+                
                 HeaderView()
                 MessageView(message: $message)
                 Text("Files Found: \(searchResults.count)")
+                    .foregroundColor(Color.primary)
                     .font(.headline)
                     .padding(.top)
                 Text(searchDuration) // Display search duration
