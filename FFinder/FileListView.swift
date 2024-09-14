@@ -14,7 +14,7 @@ struct FileListView: View {
 
     var body: some View {
         ScrollView { // Add ScrollView to support scrolling
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 if isSearching {
                     Text("Searching...").font(.headline).padding()
                 }
@@ -23,8 +23,8 @@ struct FileListView: View {
                     FileRowView(file: file)
                 }
             }
-            .padding()
         }
+        .frame(maxWidth: .infinity )
     }
 }
 
@@ -35,38 +35,43 @@ struct FileRowView: View {
         HStack {
             Image(nsImage: NSWorkspace.shared.icon(forFile: file.path))
                 .resizable()
-                .frame(width: 24, height: 24)
-                .padding(.trailing, 8)
-            
+                .frame(width: 48, height: 48)
             VStack(alignment: .leading) {
                 HStack {
                     Text(file.name)
                         .font(.system(size: 16, weight: .medium, design: .rounded))
-                    Spacer()
                     Text(file.formattedSize)
                         .font(.system(size: 14, weight: .regular, design: .rounded))
                     Text(file.formattedModificationDate)
                         .font(.system(size: 14, weight: .regular, design: .rounded))
+                    Spacer()
                 }
                 Text(file.path)
                     .font(.system(size: 14, weight: .regular, design: .rounded))
                     .foregroundColor(.secondary)
                     .lineLimit(nil)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment:.leading)
+                Spacer()
             }
-            .padding(.vertical, 4)
-            
             Button(action: {
-                // Open file in Finder
                 let fileURL = URL(fileURLWithPath: file.path)
                 NSWorkspace.shared.activateFileViewerSelecting([fileURL])
             }) {
-                Image(systemName: "folder")
+                Image(systemName: "link")
                     .font(.title2)
-                    .foregroundColor(.accentColor)
+                    .scaledToFit()
+                    .foregroundColor(.red)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .buttonStyle(PlainButtonStyle())
+            .frame(width: 48, height: 48)
         }
-        .padding()
+        .padding(4)
+        .overlay(
+            Rectangle().frame(width: nil, height: 1, alignment: .top)
+                .foregroundColor(Color.gray), alignment: .top)
+        .overlay(
+            Rectangle().frame(width: nil, height: 1, alignment: .bottom)
+                .foregroundColor(Color.gray), alignment: .bottom)
     }
 }
